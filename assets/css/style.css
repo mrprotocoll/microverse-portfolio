@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -5,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: sans-serif, 'Poppins';
+  font-family: 'Poppins', sans-serif;
   background-color: #e5e5e5;
   text-decoration: none;
 }
@@ -20,9 +22,59 @@ ul {
   padding: 0;
 }
 
+.img {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1170px;
   padding: 0 24px;
+  margin: 0 auto;
+}
+
+/* badge */
+.badge {
+  background: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  text-align: center;
+  color: #6070ff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* button */
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1px solid #7f8cff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  cursor: pointer;
+  margin: 20px 0;
+  color: #396df2;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.btn:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.btn:disabled {
+  color: #5e6c84;
+  border: 1px solid #e5e5e5;
 }
 
 /* navbar */
@@ -40,8 +92,8 @@ ul {
 
 .navbar .logo a {
   color: #6070ff;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 20px;
 }
 
@@ -67,41 +119,171 @@ ul {
   background-position: 0 40px;
   background-size: contain;
   border-bottom-left-radius: 100px;
-  margin-bottom: 2rem;
 }
 
-.hero-content {
+.hero-content-space {
   padding-top: 3rem;
   padding-bottom: 9rem;
 }
 
-.hero h1 {
-  font-weight: 900;
-  font-size: 47px;
-  line-height: 1.4;
+.about-me-content h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
   color: #172b4d;
   margin-top: 90px;
   margin-bottom: 20px;
 }
 
-.hero p {
+.about-me-content p {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   color: #344563;
   line-height: 1.7;
 }
 
-.hero .cta {
+.about-me-content .cta {
   color: #7f8cff;
-}
-
-.hero .cta h3 {
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.hero .social {
+.about-me-content .social {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 200px;
+}
+
+/* work section */
+
+.works {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 88px;
+  margin: 114px 0;
+}
+
+.works .item {
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  padding: 16px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.works .item .item-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin: 16px 0;
+}
+
+.works .item * > p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.works .content-box .details {
+  display: flex;
+  width: 100%;
+}
+
+.works .details h4 {
+  margin: 0;
+  width: 90px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #344563;
+}
+
+.works .details ul {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.works .details li {
+  font-weight: 600;
+  font-size: 13px;
+  color: #7a869a;
+}
+
+.works .categories {
+  display: flex;
+  width: 200px;
+  flex: 1;
+  justify-content: space-between;
+}
+
+/* About  */
+.about {
+  background-color: #fff;
+  border-top-right-radius: 100px;
+  padding-top: 2rem;
+}
+
+.about .tools {
+  padding: 15px 0;
+}
+
+.about .tools .dropdown-content {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 0 8px;
+}
+
+.about .tools .dropdown-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 24px 8px;
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.about .tools .active {
+  border-bottom: 0;
+}
+
+.about .tools .dropdown-title > h5 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  margin: 0;
+}
+
+.about .tools .dropdown-content .item {
+  display: flex;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  padding: 12px;
+  align-items: center;
+}
+
+.about .tools .dropdown-content .item img {
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+}
+
+.about .tools .dropdown-content .item p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.about .caret {
+  padding: 0 20px;
 }
