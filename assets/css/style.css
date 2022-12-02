@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -5,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: sans-serif, 'Poppins';
+  font-family: 'Poppins', sans-serif;
   background-color: #e5e5e5;
   text-decoration: none;
 }
@@ -18,6 +20,10 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+img{
+  width: 100%;
 }
 
 .container {
@@ -40,8 +46,8 @@ ul {
 
 .navbar .logo a {
   color: #6070ff;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 20px;
 }
 
@@ -64,7 +70,7 @@ ul {
   background-color: #fff;
   background-image: url("../images/header-bg-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 0 40px;
+  background-position: 0px 40px;
   background-size: contain;
   border-bottom-left-radius: 100px;
   margin-bottom: 2rem;
@@ -76,8 +82,8 @@ ul {
 }
 
 .hero h1 {
-  font-weight: 900;
-  font-size: 47px;
+  font-weight: 700;
+  font-size: 40px;
   line-height: 1.4;
   color: #172b4d;
   margin-top: 90px;
@@ -86,7 +92,7 @@ ul {
 
 .hero p {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   color: #344563;
   line-height: 1.7;
 }
@@ -95,9 +101,10 @@ ul {
   color: #7f8cff;
 }
 
-.hero .cta h3 {
+.hero .cta {
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 16px; 
+  font-weight: 500;                   
 }
 
 .hero .social {
@@ -105,3 +112,61 @@ ul {
   justify-content: space-between;
   width: 60%;
 }
+
+/* work section */
+
+.works {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.works .item {
+  background-color: #FFFFFF;
+  border: 1px solid #DFE1E6;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.works .item .item-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+}
+
+.works .item *> p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.works .content-box .details {
+  display: flex;
+  width: 100%;
+}
+
+.works .details h4 {
+  margin: 0;
+  width:90px ;
+  font-size: 13px;
+  font-weight: 600;
+  color: #344563;
+}
+
+.works .details ul {
+  list-style-type: disc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.works .details li {
+  font-weight: 600;
+  font-size: 13px;
+  color: #7A869A;
+}
+
+
