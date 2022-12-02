@@ -30,6 +30,7 @@ ul {
 .container {
   max-width: 1170px;
   padding: 0 24px;
+  margin: 0 auto;
 }
 
 /* badge */
@@ -151,7 +152,7 @@ ul {
 .about-me-content .social {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 200px;
 }
 
 /* work section */
@@ -159,8 +160,8 @@ ul {
 .works {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 100px;
-  margin: 8rem 0;
+  gap: 88px;
+  margin: 114px 0;
 }
 
 .works .item {
@@ -228,7 +229,7 @@ ul {
 }
 
 .about .tools {
-  padding: 33px 0;
+  padding: 15px 0;
 }
 
 .about .tools .dropdown-content {
