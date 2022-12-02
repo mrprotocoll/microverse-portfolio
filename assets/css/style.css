@@ -22,8 +22,9 @@ ul {
   padding: 0;
 }
 
-img{
+.img{
   width: 100%;
+  height: auto;
 }
 
 .container {
@@ -31,9 +32,6 @@ img{
   padding: 0 24px;
 }
 
-main {
-  margin: 8rem 0;
-}
 /* badge */
 .badge {
   background: #EBEBFF;
@@ -120,41 +118,38 @@ main {
   background-position: 0px 40px;
   background-size: contain;
   border-bottom-left-radius: 100px;
-  margin-bottom: 2rem;
+
 }
 
-.hero-content {
+.hero-content-space {
   padding-top: 3rem;
   padding-bottom: 9rem;
 }
 
-.hero h1 {
+.about-me-content h1 {
   font-weight: 700;
   font-size: 40px;
-  line-height: 1.4;
+  line-height: 52px;
   color: #172b4d;
   margin-top: 90px;
   margin-bottom: 20px;
 }
 
-.hero p {
+.about-me-content p {
   font-size: 18px;
   font-weight: 400;
   color: #344563;
   line-height: 1.7;
 }
 
-.hero .cta {
+.about-me-content .cta {
   color: #7f8cff;
-}
-
-.hero .cta {
   margin: 10px 0;
   font-size: 16px; 
   font-weight: 500;                   
 }
 
-.hero .social {
+.about-me-content .social {
   display: flex;
   justify-content: space-between;
   width: 60%;
@@ -166,6 +161,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 100px;
+  margin: 8rem 0;
 }
 
 .works .item {
@@ -224,3 +220,74 @@ main {
   flex: 1;
   justify-content: space-between;
 }
+
+/* About  */
+.about {
+  background-color: #ffffff;
+  border-top-right-radius: 100px;
+  padding-top: 2rem;
+
+}
+
+.about .tools {
+  padding: 33px 0;
+}
+
+.about .tools .dropdown-content  {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 0 8px;
+}
+
+.about .tools .dropdown-title  {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  cursor: pointer;
+  padding: 24px 8px;
+}
+
+.about .tools .dropdown-title {
+  border-bottom: 1px solid #DFE1E6;
+}
+
+.about .tools .active {
+  border-bottom: 0;
+}
+
+.about .tools .dropdown-title > h5{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+}
+
+.about .tools .dropdown-content .item {
+  display: flex;
+  background-color: #F7F7F9;
+  border-radius: 8px;
+  padding: 12px;
+  align-items: center;
+}
+
+.about .tools .dropdown-content .item img {
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+}
+
+.about .tools .dropdown-content .item p{
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+.about .caret {
+  padding: 0 20px;
+}
+
+
