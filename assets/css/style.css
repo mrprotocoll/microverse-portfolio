@@ -169,6 +169,8 @@ ul {
   border: 1px solid #dfe1e6;
   padding: 16px;
   border-radius: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .works .item .item-title {
