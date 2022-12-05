@@ -217,10 +217,12 @@ ul {
 }
 
 .works .categories {
+  width: 300px;
+}
+
+.floating {
   float: left;
-  width: 200px;
-  flex: 1;
-  justify-content: space-between;
+  margin-right: 10px;
 }
 
 .clear{
