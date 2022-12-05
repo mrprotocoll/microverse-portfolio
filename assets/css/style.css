@@ -217,10 +217,14 @@ ul {
 }
 
 .works .categories {
-  display: flex;
+  float: left;
   width: 200px;
   flex: 1;
   justify-content: space-between;
+}
+
+.clear{
+  clear: both;
 }
 
 /* About  */
@@ -278,7 +282,7 @@ ul {
 }
 
 .about .tools .dropdown-content .item p {
-  font-weight: 500;
+  font-weight: 500; 
   font-size: 15px;
   line-height: 20px;
   color: #253858;
