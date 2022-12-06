@@ -309,3 +309,22 @@ ul {
 .footer {
   background-color: white;
 }
+
+.footer .contact-heading {
+  text-align: center;
+}
+
+.footer .contact-heading h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 52px;
+}
+
+.footer .contact-heading p {
+  color: #EBEBFF;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+}
