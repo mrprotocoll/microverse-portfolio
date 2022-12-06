@@ -208,7 +208,7 @@ ul {
   display: flex;
   width: 150px;
   justify-content: space-between;
-}
+} 
 
 .works .details li {
   font-weight: 600;
