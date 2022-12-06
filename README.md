@@ -20,7 +20,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hello Microverse Project <a name="about-project"></a>
+# 📖 Microverse Portfolio Project <a name="about-project"></a>
 
 > Describe of project.
 
@@ -48,6 +48,7 @@
 
 - **The first two sections of the potfolio [nav and hero]**
 - **The middle section of the portfolio [my Projects and About me]**
+- **The footer section for contact form**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -114,6 +115,10 @@ Open the index.html file using a web browser
 
 - GitHub: [@mrprotocoll](https://github.com/mrprotocoll)
 - Twitter: [@dprotocoll](https://twitter.com/dprotocoll)
+
+👤 **joshualyngdoh**
+- GitHub: [@joshualyngdoh](https://github.com/joshualyngdoh)
+- Twitter: [@joshualyngdoh08](https://twitter.com/joshualyngdoh08)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
