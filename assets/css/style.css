@@ -301,7 +301,7 @@ ul {
   background-image: url("../images/contact-form-bg-mobile.svg");
   background-repeat: no-repeat;
   background-position: 0 40px;
-  background-size: cover;
+  background-size: 100%;
   border-top-left-radius: 100px;
   padding-top: 103px;
 }
@@ -312,6 +312,7 @@ ul {
 
 .footer .contact-heading {
   text-align: center;
+  padding-bottom: 55px;
 }
 
 .footer .contact-heading h2 {
@@ -328,3 +329,26 @@ ul {
   font-weight: 400;
   line-height: 28px;
 }
+
+.footer .contact-form {
+  padding-bottom:45px;
+}
+
+.form-input {
+  margin-bottom: 20px;
+}
+
+input,textarea {
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  width: 100%;
+  padding: 15px 16px;
+  color: #172B4D;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+
+
