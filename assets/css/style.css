@@ -233,7 +233,7 @@ ul {
 .about {
   background-color: #fff;
   border-top-right-radius: 100px;
-  padding-top: 2rem;
+  padding: 2rem 0;
 }
 
 .about .tools {
