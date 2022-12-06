@@ -297,11 +297,12 @@ ul {
 
 /* Footer  */
 .footer-bg {
+  display: flex;
+  flex-direction: column;
   background-color: #6070FF;
   background-image: url("../images/contact-form-bg-mobile.svg");
   background-repeat: no-repeat;
-  background-position: 0 40px;
-  background-size: 100%;
+  background-position: right 30px;
   border-top-left-radius: 100px;
   padding-top: 103px;
 }
@@ -312,7 +313,7 @@ ul {
 
 .footer .contact-heading {
   text-align: center;
-  padding-bottom: 55px;
+  padding-bottom: 45px;
 }
 
 .footer .contact-heading h2 {
@@ -334,13 +335,11 @@ ul {
   padding-bottom:45px;
 }
 
-
-
 .form-input {
   margin-bottom: 20px;
 }
 
-input,textarea {
+.footer .contact-form input,textarea {
   background: #FFFFFF;
   border: 1px solid #CFD8DC;
   border-radius: 8px;
@@ -352,12 +351,13 @@ input,textarea {
   line-height: 20px;
 }
 
+.footer .contact-form textarea{
+  height: 170px;
+}
+
 .form-input ::placeholder {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #B3BAC5;
 }
-
-
-
