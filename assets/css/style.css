@@ -233,7 +233,8 @@ ul {
 .about {
   background-color: #fff;
   border-top-right-radius: 100px;
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom:114px;
 }
 
 .about .tools {
@@ -292,4 +293,19 @@ ul {
 
 .about .caret {
   padding: 0 20px;
+}
+
+/* Footer  */
+.footer-bg {
+  background-color: #6070FF;
+  background-image: url("../images/contact-form-bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 0 40px;
+  background-size: cover;
+  border-top-left-radius: 100px;
+  padding-top: 103px;
+}
+
+.footer {
+  background-color: white;
 }
