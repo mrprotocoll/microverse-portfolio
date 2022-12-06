@@ -334,6 +334,8 @@ ul {
   padding-bottom:45px;
 }
 
+
+
 .form-input {
   margin-bottom: 20px;
 }
@@ -348,6 +350,13 @@ input,textarea {
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
+}
+
+.form-input ::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #B3BAC5;
 }
 
 
