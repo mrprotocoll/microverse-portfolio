@@ -209,24 +209,33 @@
     </main>
 
     <footer class="footer">
-        <div class="footer-bg container">
-            <div class="contact-heading">
-                <h2>Contact me</h2>
-                <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+        <div class="footer-color">
+            <div class="footer-bg">
+
+                <div class="container">
+                    <div class="contact-heading">
+                        <h2>Contact me</h2>
+                        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+                    </div>
+                    
+                    <form action="https://formspree.io/f/xpznvdkn" method="post" class="contact-form">
+                        <div class="form-input">
+                            <input type="text" required name="user_name" placeholder="Please enter your name" maxlength="30"/> 
+                        </div>
+                        <div class="form-input">
+                            <input type="email" required name="@gmail.com" placeholder="Please enter your email"/> 
+                        </div>
+                        <div class="form-input">
+                            <textarea required name="message" placeholder="Write your message here" maxlength="500"></textarea>
+                        </div>
+                        <div class="contact-btn">
+                            <button class="btn">Get It Touch</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                
             </div>
-            
-            <form action="https://formspree.io/f/xpznvdkn" method="post" class="contact-form">
-                <div class="form-input">
-                    <input type="text" required name="user_name" placeholder="Please enter your name" maxlength="30"/> 
-                </div>
-                <div class="form-input">
-                    <input type="email" required name="@gmail.com" placeholder="Please enter your email"/> 
-                </div>
-                <div class="form-input">
-                    <textarea required name="message" placeholder="Write your message here" maxlength="500"></textarea>
-                </div>
-                <button class="btn">Get It Touch</button>
-            </form>
         </div>
         
     </footer>
