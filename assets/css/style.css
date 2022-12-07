@@ -362,3 +362,16 @@ textarea {
   line-height: 24px;
   color: #b3bac5;
 }
+
+@media screen and (min-width: 768px) {
+  /* Hero  */
+  .hero {
+    background-image: url("../images/desktop-bg.svg");
+  }
+
+  .hero .hero-content-space {
+    padding-right: 105px;
+    padding-left: 105px;
+  }
+
+}
