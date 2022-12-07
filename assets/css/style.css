@@ -391,4 +391,15 @@ textarea {
     padding-left: 105px;
   }
 
+  /* my projects section */
+  .works .item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 46px;
+  }
+
+  .works .item:nth-of-type(even) .item-image{
+    order: 2;
+  }
+
 }
