@@ -137,12 +137,16 @@ ul {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  margin-top: 90px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
+.about {
+  padding-top: 90px;
+}
+
+
 .about-me-content p {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: #344563;
   line-height: 1.7;
@@ -239,7 +243,7 @@ ul {
 .about {
   background-color: #fff;
   border-top-right-radius: 100px;
-  padding-top: 2rem;
+  padding-top: 114px;
   padding-bottom: 114px;
 }
 
@@ -390,7 +394,9 @@ textarea {
     padding-right: 105px;
     padding-left: 105px;
   }
-
+  .hero .about-me-content p {
+    font-size: 20px !important;
+  }
   /* my projects section */
   .works .item{
     display: grid;
@@ -400,6 +406,30 @@ textarea {
 
   .works .item:nth-of-type(even) .item-image{
     order: 2;
+  }
+
+  /* About me */
+  .about .about-me-content {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 37px;
+  }
+
+  .about .tools .dropdown-content {
+    margin:0;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 13px;
+  }
+
+  .about .tools .dropdown-content .item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about .tools .dropdown-content .item p {
+    margin-bottom: 0;
   }
 
 }
