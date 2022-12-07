@@ -29,7 +29,8 @@ ul {
 
 .container {
   max-width: 1170px;
-  padding: 0 24px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin: 0 auto;
 }
 
@@ -85,6 +86,7 @@ ul {
 }
 
 .nav {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,6 +111,10 @@ ul {
 .bars .bar-item {
   border: 2px solid #6070ff;
   border-radius: 2px;
+}
+
+.nav-link {
+  display: none;
 }
 
 /* Hero  */
@@ -364,6 +370,17 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+  /* navbar */
+  .bars{
+    display: none;
+  }
+
+  .nav-link{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 32px;
+  }
+
   /* Hero  */
   .hero {
     background-image: url("../images/desktop-bg.svg");
