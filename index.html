@@ -12,15 +12,20 @@
     <nav class="navbar">
         <section class="container nav">
             <div class="logo"><a href="#">My Logo</a></div>
-            <div class="bars">
-                <div class="bar-item"></div>
-                <div class="bar-item"></div>
-                <div class="bar-item"></div>
-            </div>
+            <ul class="bars">
+                <li class="bar-item"></li>
+                <li class="bar-item"></li>
+                <li class="bar-item"></li>
+            </ul>
+            <ul class="nav-link">
+                <li><a href="#">Portoflio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </section>
     </nav>
 
-    <header class="hero">
+    <header class="hero"> 
         <div class="container">
             <section class="hero-content-space about-me-content">
                 <h1>I’m Dami <br> Glad to see you!</h1>
@@ -142,17 +147,19 @@
         <section class="about">
             <div class="container">
                 <div class="about-me-content hero-content">
-                    <h1>About Myself</h1>
-                    <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-                    <h3 class="cta">LET’S CONNECT</h3>
-                    <ul class="social">
-                        <li class="icon"><a href="#"><img src="assets/images/twitter.svg" alt="twitter"></a></li>
-                        <li class="icon"><a href="#"><img src="assets/images/linkedin.svg" alt="linkedin"></a></li>
-                        <li class="icon"><a href="#"><img src="assets/images/microverse.svg" alt="microverse"></a></li>
-                        <li class="icon"><a href="#"><img src="assets/images/github.svg" alt="github"></a></li>
-                        <li class="icon"><a href="#"><img src="assets/images/vector.svg" alt="vector"></a></li>
-                    </ul>
-                    <button class="btn">Get my resume</button>
+                    <div class="bio">
+                        <h1>About <br> Myself</h1>
+                        <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+                        <h3 class="cta">LET’S CONNECT</h3>
+                        <ul class="social">
+                            <li class="icon"><a href="#"><img src="assets/images/twitter.svg" alt="twitter"></a></li>
+                            <li class="icon"><a href="#"><img src="assets/images/linkedin.svg" alt="linkedin"></a></li>
+                            <li class="icon"><a href="#"><img src="assets/images/microverse.svg" alt="microverse"></a></li>
+                            <li class="icon"><a href="#"><img src="assets/images/github.svg" alt="github"></a></li>
+                            <li class="icon"><a href="#"><img src="assets/images/vector.svg" alt="vector"></a></li>
+                        </ul>
+                        <button class="btn">Get my resume</button>
+                    </div>
     
                     <ul class="tools">
                         <li class="dropdown">
@@ -200,25 +207,35 @@
             </div>
         </section>
     </main>
+
     <footer class="footer">
-        <div class="footer-bg container">
-            <div class="contact-heading">
-                <h2>Contact me</h2>
-                <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+        <div class="footer-color">
+            <div class="footer-bg">
+
+                <div class="container">
+                    <div class="contact-heading">
+                        <h2>Contact me</h2>
+                        <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+                    </div>
+                    
+                    <form action="https://formspree.io/f/xpznvdkn" method="post" class="contact-form">
+                        <div class="form-input">
+                            <input type="text" required name="user_name" placeholder="Please enter your name" maxlength="30"/> 
+                        </div>
+                        <div class="form-input">
+                            <input type="email" required name="@gmail.com" placeholder="Please enter your email"/> 
+                        </div>
+                        <div class="form-input">
+                            <textarea required name="message" placeholder="Write your message here" maxlength="500"></textarea>
+                        </div>
+                        <div class="contact-btn">
+                            <button class="btn">Get It Touch</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                
             </div>
-            
-            <form action="https://formspree.io/f/xpznvdkn" method="post" class="contact-form">
-                <div class="form-input">
-                    <input type="text" required name="user_name" placeholder="Please enter your name" maxlength="30"/> 
-                </div>
-                <div class="form-input">
-                    <input type="email" required name="@gmail.com" placeholder="Please enter your email"/> 
-                </div>
-                <div class="form-input">
-                    <textarea required name="message" placeholder="Write your message here" maxlength="500"></textarea>
-                </div>
-                <button class="btn">Get It Touch</button>
-            </form>
         </div>
         
     </footer>
