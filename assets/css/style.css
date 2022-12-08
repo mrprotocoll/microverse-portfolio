@@ -123,7 +123,7 @@ ul {
   background-image: url("../images/header-bg-mobile.svg");
   background-repeat: no-repeat;
   background-position: 0 40px;
-  background-size: contain;
+  background-size: 100%;
   border-bottom-left-radius: 100px;
 }
 
@@ -138,6 +138,11 @@ ul {
   line-height: 52px;
   color: #172b4d;
   margin: 20px 0;
+}
+
+.hero .about-me-content h1{
+  margin-top: 90px;
+  margin-bottom: 20px;
 }
 
 .about {
@@ -169,7 +174,7 @@ ul {
 
 .works {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
   gap: 88px;
   margin: 114px 0;
 }
@@ -347,12 +352,12 @@ ul {
   color: #253858;
 }
 
-.footer .contact-form {
-  padding-bottom: 45px;
-}
-
 .form-input {
   margin-bottom: 20px;
+}
+
+.footer .footer-color {
+  padding: 45px 0;
 }
 
 .footer .contact-form input,
@@ -391,18 +396,38 @@ textarea {
     gap: 32px;
   }
 
+  .nav-link a {
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
   /* Hero  */
   .hero {
     background-image: url("../images/desktop-bg.svg");
+    background-position: center 8px;
+    background-size: contain;
   }
 
   .hero .hero-content-space {
     padding-right: 105px;
     padding-left: 105px;
+    padding-top: 11rem;
+    padding-bottom: 11rem;
   }
+
+  .hero .about-me-content .social {
+    margin-bottom: 100px;
+  }
+
   .hero .about-me-content p {
     font-size: 20px !important;
   }
+
+  .hero .about-me-content h1 {
+    font-size: 48px !important;
+  }
+
   /* my projects section */
   .works .item{
     display: grid;
@@ -437,6 +462,7 @@ textarea {
   .about .tools .dropdown-content .item p {
     margin-bottom: 0;
   }
+
 
   /* Footer */
   .footer-bg {
