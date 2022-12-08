@@ -305,13 +305,13 @@ ul {
   background-image: url("../images/contact-form-bg-mobile.svg");
   background-repeat: no-repeat;
   background-position: right 30px;
-  border-top-left-radius: 100px;
   padding-top: 103px;
 }
 
 .footer .footer-color {
   background-color: #6070ff;
   padding: 45px 0;
+  border-top-left-radius: 100px;
 }
 
 .footer {
