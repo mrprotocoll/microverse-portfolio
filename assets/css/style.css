@@ -140,15 +140,10 @@ ul {
   margin: 20px 0;
 }
 
-.hero .about-me-content h1{
+.hero .about-me-content h1 {
   margin-top: 90px;
   margin-bottom: 20px;
 }
-
-.about {
-  padding-top: 90px;
-}
-
 
 .about-me-content p {
   font-size: 16px;
@@ -316,6 +311,7 @@ ul {
 
 .footer .footer-color {
   background-color: #6070ff;
+  padding: 45px 0;
 }
 
 .footer {
@@ -356,10 +352,6 @@ ul {
   margin-bottom: 20px;
 }
 
-.footer .footer-color {
-  padding: 45px 0;
-}
-
 .footer .contact-form input,
 textarea {
   background: #fff;
@@ -386,11 +378,11 @@ textarea {
 
 @media screen and (min-width: 768px) {
   /* navbar */
-  .bars{
+  .bars {
     display: none;
   }
 
-  .nav-link{
+  .nav-link {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 32px;
@@ -429,13 +421,13 @@ textarea {
   }
 
   /* my projects section */
-  .works .item{
+  .works .item {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 46px;
   }
 
-  .works .item:nth-of-type(even) .item-image{
+  .works .item:nth-of-type(even) .item-image {
     order: 2;
   }
 
@@ -447,7 +439,7 @@ textarea {
   }
 
   .about .tools .dropdown-content {
-    margin:0;
+    margin: 0;
     display: flex;
     gap: 12px;
     margin-bottom: 13px;
@@ -462,7 +454,6 @@ textarea {
   .about .tools .dropdown-content .item p {
     margin-bottom: 0;
   }
-
 
   /* Footer */
   .footer-bg {
@@ -490,7 +481,8 @@ textarea {
     margin-top: 0;
   }
 
-  .footer .contact-form input, textarea {
+  .footer .contact-form input,
+  textarea {
     border-radius: 2px;
   }
 }
