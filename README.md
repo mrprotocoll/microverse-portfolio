@@ -49,6 +49,7 @@
 - **The first two sections of the potfolio [nav and hero]**
 - **The middle section of the portfolio [my Projects and About me]**
 - **The footer section for contact form**
+- **Desktop view**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
