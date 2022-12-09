@@ -141,6 +141,20 @@ ul {
   margin: 20px 0;
 }
 
+.hero-content-space span {
+  animation: slideIn 1000ms ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
 .hero .about-me-content h1 {
   margin-top: 90px;
   margin-bottom: 20px;
