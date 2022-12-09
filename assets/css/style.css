@@ -60,6 +60,7 @@ ul {
   cursor: pointer;
   margin: 20px 0;
   color: #396df2;
+  transition: all 500ms linear;
 }
 
 .btn:hover {
@@ -140,6 +141,20 @@ ul {
   margin: 20px 0;
 }
 
+.hero-content-space span {
+  animation: slideIn 1000ms ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    margin-left: -550px;
+  }
+
+  to {
+    margin-left: 0;
+  }
+}
+
 .hero .about-me-content h1 {
   margin-top: 90px;
   margin-bottom: 20px;
@@ -181,6 +196,33 @@ ul {
   border-radius: 16px;
   display: flex;
   flex-direction: column;
+  animation: slideRight 1000ms ease-in-out;
+}
+
+.works .item:nth-of-type(1) {
+  animation-duration: 500ms;
+}
+
+.works .item:nth-of-type(2) {
+  animation-duration: 1500ms;
+}
+
+.works .item:nth-of-type(3) {
+  animation-duration: 2500ms;
+}
+
+.works .item:nth-of-type(4) {
+  animation-duration: 3500ms;
+}
+
+@keyframes slideRight {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }
 
 .works .item .item-title {
@@ -189,6 +231,14 @@ ul {
   line-height: 44px;
   color: #172b4d;
   margin: 16px 0;
+}
+
+.works .item-image img {
+  transition: all 500ms ease-in-out 100ms;
+}
+
+.works .item-image img:hover {
+  rotate: 3deg;
 }
 
 .works .item * > p {
@@ -392,6 +442,11 @@ textarea {
     color: #344563;
     font-weight: 500;
     font-size: 15px;
+    transition: all 500ms ease-in-out 10ms;
+  }
+
+  .nav-link a:hover {
+    color: #6070ff;
   }
 
   /* Hero  */
