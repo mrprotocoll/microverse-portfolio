@@ -147,11 +147,11 @@ ul {
 
 @keyframes slideIn {
   from {
-    width: 0%;
+    margin-left: -550px;
   }
 
   to {
-    width: 100%;
+    margin-left: 0px;
   }
 }
 
