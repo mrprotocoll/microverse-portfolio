@@ -192,6 +192,14 @@ ul {
   margin: 16px 0;
 }
 
+.works .item-image img {
+  transition: all 500ms ease-in-out 100ms;
+}
+
+.works .item-image img:hover {
+  rotate: 3deg;
+}
+
 .works .item * > p {
   font-weight: 400;
   font-size: 15px;
