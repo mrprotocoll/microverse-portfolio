@@ -50,6 +50,7 @@
 - **The middle section of the portfolio [my Projects and About me]**
 - **The footer section for contact form**
 - **Desktop view**
+- **Transition and Animation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
