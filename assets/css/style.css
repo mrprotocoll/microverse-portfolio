@@ -60,6 +60,7 @@ ul {
   cursor: pointer;
   margin: 20px 0;
   color: #396df2;
+  transition: all 500ms linear;
 }
 
 .btn:hover {
