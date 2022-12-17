@@ -8,6 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
   - [🚀 Live Demo](#live-demo)
+  - [🚀 Loom Walkthrough](#loom-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -61,6 +62,15 @@
 > Link to deployed project.
 
 - [Live Demo Link](https://mrprotocoll.github.io/microverse-portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Loom Walkthrough -->
+## LOOM WALKTHROUGH <a name="loom-demo"></a>
+
+> Link to Loom Walkthrough.
+
+- [Loom Walkthrough Link](https://www.loom.com/share/0196025dab894492ac026de37cd344d9)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
