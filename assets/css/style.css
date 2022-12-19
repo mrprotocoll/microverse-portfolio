@@ -123,7 +123,7 @@ ul {
 }
 
 .show {
-  padding: 0px 0px !important;
+  padding: 0 0 !important;
 }
 
 .show .mobile-foreground {
@@ -135,7 +135,7 @@ ul {
 }
 
 .show .mobile-overlay {
-  background: #6070FF;
+  background: #6070ff;
   mix-blend-mode: multiply;
   height: 100vh;
   width: 100vw;
@@ -183,18 +183,18 @@ ul {
   border-radius: 2px;
 }
 
-.show .bars .bar-item:nth-of-type(1){
-  rotate: 45deg;
-  margin-top: 15px;
+.show .bar-item:nth-of-type(2) {
+  display: none !important;
 }
 
-.show .bars .bar-item:nth-of-type(3){
+.show .bars .bar-item:nth-of-type(3) {
   rotate: -45deg;
   margin-top: -3px;
 }
 
-.show .bar-item:nth-of-type(2){
-  display: none !important;
+.show .bars .bar-item:nth-of-type(1) {
+  rotate: 45deg;
+  margin-top: 15px;
 }
 
 /* Hero  */
@@ -512,7 +512,7 @@ textarea {
   }
 
   .show .nav {
-    padding-top: 0px;
+    padding-top: 0;
     display: flex;
     position: relative;
     z-index: 9;
@@ -522,19 +522,19 @@ textarea {
     display: block;
   }
 
-  .show .nav-link {
-    display: grid;
-    padding-top: 0px;
-  }
-
   .show .nav-link li {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .nav-link {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 32px;
+  }
+
+  .show .nav-link {
+    display: grid;
+    padding-top: 0;
   }
 
   .nav-link a {
