@@ -52,6 +52,7 @@
 - **The footer section for contact form**
 - **Desktop view**
 - **Transition and Animation**
+- **Mobile Menu**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,10 +128,16 @@ Open the index.html file using a web browser
 
 - GitHub: [@mrprotocoll](https://github.com/mrprotocoll)
 - Twitter: [@dprotocoll](https://twitter.com/dprotocoll)
+- LinkedIn: [@mrprotocoll](https://www.linkedin.com/in/mrprotocoll)
 
 👤 **joshualyngdoh**
 - GitHub: [@joshualyngdoh](https://github.com/joshualyngdoh)
 - Twitter: [@joshualyngdoh08](https://twitter.com/joshualyngdoh08)
+
+👤 **TamaraDimov**
+- GitHub: [@TamaraDimov](https://github.com/TamaraDimov)
+- Twitter: [@TamaraDimov](https://twitter.com/DimovTamara)
+- LinkedIn: [@TamaraDimov](https://www.linkedin.com/in/tamara-dimov-b85139a2/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
