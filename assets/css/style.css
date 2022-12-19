@@ -118,6 +118,52 @@ ul {
   display: none;
 }
 
+.show {
+  padding: 0px 0px !important;
+}
+
+.show .mobile-foreground {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+}
+
+.show .mobile-overlay {
+  background-color: #6070ffe3 !important;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 4;
+}
+
+.show .nav {
+  padding-top: 20px;
+  display: block;
+  position: relative;
+  z-index: 9;
+}
+
+.show .logo {
+  display: none;
+}
+
+.show .nav-link{
+  display: block !important;
+  clear: both;
+}
+
+.show .bars {
+  float: right;
+  color: #fff;
+}
+
+.show .bars .bar-item {
+  border-color: #fff;
+  border-radius: 2px;
+}
+
 /* Hero  */
 .hero {
   background-color: #fff;
