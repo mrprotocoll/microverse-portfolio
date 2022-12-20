@@ -13,6 +13,7 @@ window.addEventListener("load", () => {
       toggleNavbar();
     });
   });
+
 });
 
 const workData = [
