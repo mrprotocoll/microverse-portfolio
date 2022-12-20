@@ -71,6 +71,7 @@ ul {
 .btn-group img {
   margin-left: 14px;
 }
+
 .btn:hover {
   color: #fff;
   background: #6070ff;
@@ -523,7 +524,7 @@ textarea {
   width: 100vw;
   position: fixed;
   z-index: 7;
-  padding: 50px 0px;
+  padding: 50px 0;
   overflow: auto;
   top: 0;
   left: 0;
@@ -557,32 +558,28 @@ textarea {
   flex-direction: column;
   justify-content: space-between;
   height: 20px;
-  width: 28px;
+  width: 20px !important;
+  margin-bottom: 20px;
 }
 
-.modal .close .bar-item:hover,
-.close .bar-item:focus {
+.close .close-item:focus,
+.close .close-item:hover {
   border: 1px solid #000;
   cursor: pointer;
 }
 
-.modal .close .bar-item:nth-of-type(1) {
+.close .close-item:nth-of-type(1) {
   rotate: -45deg;
   margin-top: 18px;
 }
 
-.modal .close .bar-item:nth-of-type(2) {
+.close .close-item:nth-of-type(2) {
   rotate: 45deg;
   margin-top: -3px;
 }
 
-.modal .close .bar-item {
+.modal .close .close-item {
   border: 1px solid #bebaba;
-}
-
-.modal .close {
-  width: 20px !important;
-  margin-bottom: 20px;
 }
 
 .modal-footer {
@@ -599,7 +596,7 @@ textarea {
 }
 
 .modal .works {
-  margin: 0px;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
