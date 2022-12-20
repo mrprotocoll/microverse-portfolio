@@ -367,7 +367,7 @@ ul {
 }
 
 .works .categories {
-  width: 300px;
+  width: 100%;
 }
 
 .floating {
@@ -586,7 +586,7 @@ textarea {
 }
 
 .modal-footer {
-  border-top: 1px solid #EBECF0;
+  border-top: 1px solid #ebecf0;
   margin-top: 20px;
 }
 
@@ -762,7 +762,7 @@ textarea {
     margin: 1em 0;
   }
 
-  .modal .modal-image img{
+  .modal .modal-image img {
     height: 586px;
   }
 }
