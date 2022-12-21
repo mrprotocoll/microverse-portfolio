@@ -125,18 +125,19 @@
                         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
                     </div>
                     
-                    <form action="https://formspree.io/f/xpznvdkn" method="post" class="contact-form">
+                    <form action="https://formspree.io/f/xpznvdkn" method="post" class="contact-form" id="contact-form">
                         <div class="form-input">
                             <input type="text" required name="user_name" placeholder="Please enter your name" maxlength="30"/> 
                         </div>
                         <div class="form-input">
-                            <input type="email" required name="@gmail.com" placeholder="Please enter your email"/> 
+                            <input type="email" id="email" required name="@gmail.com" placeholder="Please enter your email"/> 
                         </div>
                         <div class="form-input">
                             <textarea required name="message" placeholder="Write your message here" maxlength="500"></textarea>
                         </div>
+                        <div class="error-msg"> </div>
                         <div class="contact-btn">
-                            <button class="btn">Get It Touch</button>
+                            <button class="btn" type="submit">Get It Touch</button>
                         </div>
                         
                     </form>

@@ -197,4 +197,18 @@ window.addEventListener('load', () => {
       });
     });
   });
+
+  // contact form validation
+  const email = document.querySelector("#email");
+  document.querySelector("#contact-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    // document.querySelector(".error-msg").style.display = "block";
+
+    // if the email field is valid, we let the form submit
+    if (email.validity.valid) {
+      // submit form
+    }else{
+      // show errors
+    }
+  });
 });

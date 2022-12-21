@@ -89,6 +89,14 @@ ul {
   border: 1px solid #e5e5e5;
 }
 
+.error-msg {
+  display: none;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  background: rgba(155, 13, 13, 0.466);
+}
+
 /* navbar */
 
 .navbar {
