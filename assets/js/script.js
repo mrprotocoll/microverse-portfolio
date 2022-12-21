@@ -80,7 +80,9 @@ const portfolioTemplate = (portfolioData) => {
           <ul class="categories">${toolsTemplate(data.tools)}
           </ul>
           <div class="clear"></div>
-          <button class="btn see-project" data-id="${data.id}">See Project</button>
+          <button class="btn see-project" data-id="${
+  data.id
+}">See Project</button>
       </div>
     </div>`;
   });
@@ -121,7 +123,8 @@ window.addEventListener('load', () => {
       image: 'assets/images/Snapshoot Portfolio.png',
       stack: 'Back End Dev',
       year: '2015',
-      excerpt: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      excerpt:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
       tools: ['html', 'CSS', 'JavaScript'],
@@ -199,17 +202,36 @@ window.addEventListener('load', () => {
   });
 
   // contact form validation
-  const email = document.getElementById("email");
-  const form = document.getElementById("contact-form");
-  document.querySelector("#submit").addEventListener("click", (e) => {
-    e.preventDefault();
+  const email = document.getElementById('email');
+  document.querySelector('#submit').addEventListener('click', (e) => {
     // if the email field is valid, we let the form submit
     if (email.validity.typeMismatch) {
       // submit form
-      document.getElementById("error").innerHTML = "Invalid Email";
-    }else{
-      // show errors
-      form.submit()
+      document.getElementById('error').innerHTML = 'Invalid Email';
+      e.preventDefault();
+      return;
     }
+    if (email.validity.patternMismatch) {
+      // submit form
+      document.getElementById('error').innerHTML = 'Please type for email with lowercase letters';
+      e.preventDefault();
+      return;
+    }
+    const name = document.getElementById('name');
+    if (!name.validity.valid) {
+      // submit form
+      document.getElementById('error').innerHTML = 'Invalid Name';
+      e.preventDefault();
+      return;
+    }
+    const text = document.getElementById('text');
+    if (!text.validity.valid) {
+      // submit form
+      document.getElementById('error').innerHTML = 'Invalid Text';
+      e.preventDefault();
+      return;
+    }
+    // show errors
+    document.getElementById('contact-form').submit();
   });
 });
