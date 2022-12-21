@@ -38,6 +38,7 @@
   <ul>
     <li><a href="https://html.com/">Html</a></li>
     <li><a href="https://www.w3.org/Style/CSS/Overview.en.html">CSS</a></li>
+    <li><a href="https://www.javascript.com/">JavaScript</a></li>
   </ul>
 </details>
 
@@ -53,6 +54,7 @@
 - **Desktop view**
 - **Transition and Animation**
 - **Mobile Menu**
+- **Modal Pop Up**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
