@@ -199,16 +199,17 @@ window.addEventListener('load', () => {
   });
 
   // contact form validation
-  const email = document.querySelector("#email");
-  document.querySelector("#contact-form").addEventListener("submit", (e) => {
+  const email = document.getElementById("email");
+  const form = document.getElementById("contact-form");
+  document.querySelector("#submit").addEventListener("click", (e) => {
     e.preventDefault();
-    // document.querySelector(".error-msg").style.display = "block";
-
     // if the email field is valid, we let the form submit
-    if (email.validity.valid) {
+    if (email.validity.typeMismatch) {
       // submit form
+      document.getElementById("error").innerHTML = "Invalid Email";
     }else{
       // show errors
+      form.submit()
     }
   });
 });

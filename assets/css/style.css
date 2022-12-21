@@ -90,10 +90,9 @@ ul {
 }
 
 .error-msg {
-  display: none;
+  display: inline-block;
   color: white;
   font-weight: bold;
-  padding: 20px;
   background: rgba(155, 13, 13, 0.466);
 }
 
