@@ -80,7 +80,9 @@ const portfolioTemplate = (portfolioData) => {
           <ul class="categories">${toolsTemplate(data.tools)}
           </ul>
           <div class="clear"></div>
-          <button class="btn see-project" data-id="${data.id}">See Project</button>
+          <button class="btn see-project" data-id="${
+  data.id
+}">See Project</button>
       </div>
     </div>`;
   });
@@ -121,7 +123,8 @@ window.addEventListener('load', () => {
       image: 'assets/images/Snapshoot Portfolio.png',
       stack: 'Back End Dev',
       year: '2015',
-      excerpt: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      excerpt:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       description:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
       tools: ['html', 'CSS', 'JavaScript'],
@@ -196,5 +199,30 @@ window.addEventListener('load', () => {
         showModal(filter[0], closeModal);
       });
     });
+  });
+
+  const errorMessage = (message) => {
+    document.getElementById('error').innerHTML = `<p style="padding:10px;">${message}</p>`;
+  };
+  // contact form validation
+  const email = document.getElementById('email');
+  const name = document.getElementById('name');
+  const text = document.getElementById('text');
+  document.querySelector('#submit').addEventListener('click', () => {
+    // if the email field is valid, we let the form submit
+    if (email.validity.typeMismatch) {
+      errorMessage('Invalid Email: Enter a valid email address');
+    } else if (email.validity.patternMismatch) {
+      errorMessage('Please ensure email address is in lowercase');
+    } else if (!name.validity.valid) {
+      errorMessage('Invalid Name: Name is required');
+    } else if (!email.validity.valid) {
+      errorMessage('Invalid Email: Email is required');
+    } else if (!text.validity.valid) {
+      errorMessage('Invalid Message: Message is required');
+    } else {
+      // submit form
+      document.getElementById('contact-form').submit();
+    }
   });
 });

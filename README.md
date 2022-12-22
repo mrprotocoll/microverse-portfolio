@@ -55,6 +55,7 @@
 - **Transition and Animation**
 - **Mobile Menu**
 - **Modal Pop Up**
+- **Form Validation using Javascript**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
