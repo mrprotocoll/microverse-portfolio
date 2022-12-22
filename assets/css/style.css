@@ -90,7 +90,7 @@ ul {
 }
 
 .error-msg {
-  display: inline-block;
+  display: block;
   color: white;
   font-weight: bold;
   background: rgba(155, 13, 13, 0.466);
