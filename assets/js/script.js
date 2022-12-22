@@ -208,8 +208,7 @@ window.addEventListener('load', () => {
   const email = document.getElementById('email');
   const name = document.getElementById('name');
   const text = document.getElementById('text');
-  document.querySelector('#submit').addEventListener('click', (e) => {
-    e.preventDefault();
+  document.querySelector('#submit').addEventListener('click', () => {
     // if the email field is valid, we let the form submit
     if (email.validity.typeMismatch) {
       errorMessage('Invalid Email: Enter a valid email address');

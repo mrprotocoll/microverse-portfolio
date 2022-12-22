@@ -91,9 +91,10 @@ ul {
 
 .error-msg {
   display: block;
-  color: white;
+  color: red;
   font-weight: bold;
-  background: rgba(155, 13, 13, 0.466);
+  background: white;
+  border: 1px solid red;
 }
 
 /* navbar */
