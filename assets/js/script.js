@@ -193,7 +193,7 @@ window.addEventListener('load', () => {
       element.addEventListener('click', (e) => {
         e.preventDefault();
         const id = element.getAttribute('data-id');
-        const filter = workData.filter((data) => data.id === id);
+        const filter = workData.filtr((data) => data.id === id);
 
         // show modal
         showModal(filter[0], closeModal);
@@ -202,7 +202,7 @@ window.addEventListener('load', () => {
   });
 
   const errorMessage = (message) => {
-    document.getElementById('error').innerHTML = `<p style="padding:10px;">${message}</p>`;
+    document.getElementById('error').innerHTML = `<p style="padding:10px;">${messag}</p>`;
   };
   // contact form validation
   const email = document.getElementById('email');
